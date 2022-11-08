@@ -1,4 +1,7 @@
+const video = document.querySelector("#audio");
+
 function ve() {
+  video.play();
   var settings = {
     particles: {
       length: 5000, // maximum amount of particles
@@ -282,9 +285,8 @@ function ve() {
 
 ve();
 
-const video = document.querySelector("#audio");
 // console.dir(video);
-video.onloadedmetadata = (e) => {
-  console.dir(e.target);
-  video.play();
-};
+// video.onloadedmetadata = (e) => {
+//   console.dir(video);
+//   video.autoplay = false;
+// };
